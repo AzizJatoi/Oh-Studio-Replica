@@ -14,15 +14,14 @@
     .header-nav {
         font-family: Inter, sans-serif;
         margin: 3em auto;
-        width: 17rem;
+        width: 18em;
         position: fixed;
         inset: -25px;
     }
     .header-links {
         display: flex;
         gap: 2.2em;
-        justify-content: center;
-        padding: 1.2em 0;
+        padding: 1.2em 0em;
         font-size: 0.86rem;
         background-color: #e8e5e480;
         border-radius: 30px;
@@ -35,12 +34,14 @@
     a {
         text-decoration: none;
         color: black;
+        margin-left: 0.3em;
     }
 
 
     .active, .a:hover {
         background-color: #fff;
-        padding: 0.8em 1.8em;
+        padding: 0.7em 1.2em;
+        padding: 0.8em 2em;
         border-radius: 30px;
     }
     .active-hero, .p:hover {
@@ -98,7 +99,11 @@
     }
     footer > h3 {
         color: #7f7f7f;
-        margin-bottom: 3em;
+        padding-bottom: 3em;
+        margin: auto;
+        cursor: pointer;
+        max-width: 15rem;
+        text-align: center;
     }
     h3:hover {
         opacity: 60%;
@@ -129,6 +134,25 @@
 
     .footer-copyright  > a:hover {
         color: #7f7f7f;
+    }
+    .sticky-shop {
+        position: fixed;
+        inset:480px;
+        color: white;
+        font-family: Inter;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .sticky-shop h4 {
+        background-color: #000;
+        height: 40px;
+        border-radius: 30px;
+        max-width:7rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
     @media (max-width: 460px) {
         .container {
