@@ -1,0 +1,139 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-size: 16px;
+    }
+    @font-face {
+        font-family: Neue Med;
+        src: url(./Font/NeueMontreal-Medium.otf);
+    }
+
+    .header-nav {
+        font-family: Inter, sans-serif;
+        margin: 3em auto;
+        width: 17rem;
+        position: fixed;
+        inset: -25px;
+    }
+    .header-links {
+        display: flex;
+        gap: 2.2em;
+        justify-content: center;
+        padding: 1.2em 0;
+        font-size: 0.86rem;
+        background-color: #e8e5e480;
+        border-radius: 30px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .active, .a:hover {
+        background-color: #fff;
+        padding: 0.8em 1.8em;
+        border-radius: 30px;
+    }
+    .active-hero, .p:hover {
+        background-color: #e8e5e480;
+        padding: 0.8em 1em;
+        border-radius: 30px;
+    }
+    h1 {
+        font-family: 'Neue Med', sans-serif;
+        font-size: 4.5rem;
+        text-align: center;
+        max-width: 45rem;
+        margin: 2em auto 0.5em;
+    }
+
+    .expertise {
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-size: 0.85rem;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin: 3em 2.3em;
+        row-gap: 2.5em;
+        column-gap: 1.2em
+    }
+    .container img {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 100%;
+    }
+    .container video {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 100%;
+    }
+    footer {
+        margin-top: 10em;
+    }
+    h2, h3 { 
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'Neue Med', sans-serif;
+    }
+    footer > h3 {
+        color: #7f7f7f;
+        margin-bottom: 3em;
+    }
+    h3:hover {
+        opacity: 60%;
+        cursor: pointer;
+    }
+
+    .footer-copyright {
+        display: flex;
+        margin-left: 2.5em;
+        font-family: Inter, sans-serif;
+        gap: 0.2em;
+        padding-bottom: 2em;
+    }
+    .footer-copyright > img {
+        width: 25px;
+    }
+    .footer-copyright > p {
+        margin-top: 0.5em;
+        margin-right: auto;
+        font-size: 0.8rem;
+    } 
+
+    .footer-copyright  > a {
+        padding-right: 2em;
+        font-size: 0.8rem;
+    } 
+
+
+    .footer-copyright  > a:hover {
+        color: #7f7f7f;
+    }
+    @media (max-width: 460px) {
+        .container {
+        margin: 3em 1.2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+    }
