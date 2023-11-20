@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: Neue Med;
+    src: url(./Font/NeueMontreal-Medium.otf);
+    font-family: Neue Light;
+    src: url(./Font/NeueMontreal-Light.otf);
+    font-family: Neue Normal;
+    src: url(./Font/NeueMontreal-Regular.otf);
+    font-family: Neue Bold;
+    src: url(./Font/NeueMontreal-Bold.otf);
+}
+
+
+.contact-container > h1 {
+    font-family: 'Neue Med', sans-serif;
+    margin-top: 3em;
+    margin-bottom: 0;
+
+}
+.get_in_touch {
+    text-align: center;
+    font-size: 4em;
+    margin: 0 auto;
+    color: #7f7f7f;
+    font-weight: bolder;
+    font-family: 'Neue Normal', sans-serif;
+    cursor: pointer;
+    display: block;
+    max-width: 26rem;
+
+}
+.get_in_touch:hover {
+    color: rgba(103, 98, 97, 0.502);
+}
