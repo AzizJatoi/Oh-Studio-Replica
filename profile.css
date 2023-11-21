@@ -40,12 +40,17 @@ body {
 }
 .about {
     margin-bottom: 0;
+    padding: 2em;
+    color: black;
 }
 .about-info {
-    max-width: 650px;
+    max-width: 60rem;
     text-align: center;
     margin: 0 auto;
+    font-family: 'Neue Normal', sans-serif;
+    font-weight: bolder;
     padding-block: 0.7em;
+    font-size: 3rem;
     margin-bottom: 5em;
 }
 .experience {
@@ -60,11 +65,9 @@ body {
 
 .experience-section-container {
     font-family: 'Neue light', sans-serif;
+    gap: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 3rem;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-bottom: 10em;
 }
 
@@ -94,39 +97,39 @@ body {
 .brand-name-container {
     background-color: #605d5d;
     color: black;
-    padding: 3em 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 
 }
 .brands-names {
+    width: 50%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
-    place-items: center;
+    padding-block: 2em;
 
 }
-.brands-names > img {
+.brand-name-container  * img {
     width: 170px;
     display: block;
     color: black;
 }
 
-/* .middle-footer{
-    text-align: center;
-    font-family: 'Neue Normal', sans-serif;
-    font-size: 0.85rem;
-}
-.middle-footer > img {
-    width: 30px;
+@media (max-width: 1200px) {
+    .about-info {
+        font-size: clamp(3rem, 2.5rem, 2rem);
+        max-width: 80%;
+
+    }        
 }
 
-.footer_links {
-    padding-block: 0.5em;
-    margin-bottom: 5em;
-    padding-right: 0.5em;
-}
-.footer_links > a {
-    padding-left: 0.7em;
-    font-size: 0.84rem;
 
-} */
+@media (max-width: 800px) {
+    .about-info {
+        font-size: clamp(2.5rem, 2.5rem, 2rem);
+        padding-top:3em;
+        max-width: 80%;
+    }
+}
+
+
+
