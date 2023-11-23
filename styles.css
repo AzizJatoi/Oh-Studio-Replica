@@ -273,3 +273,26 @@ footer {
         row-gap: 1rem;
     }
 }
+
+
+/* animation */
+/* .fadeup {
+    transform: translateY(70px);
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+  }
+ 
+  .in-view {
+    transform: none;
+    opacity: 0;
+}
+
+.in-view.fadeup, .in-view .fadeup{ 
+    transform: translateY(0px);
+    opacity: 1;
+}
+ */
+
+
